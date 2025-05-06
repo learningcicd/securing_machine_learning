@@ -143,3 +143,20 @@ docker run -it ml-vuln-demo python main.py --eval-server
 ## 📜 License
 
 MIT — Use for education, training, and secure development advocacy.
+
+
+## 🧠 OWASP Top 10 for LLMs & Mapped Vulnerabilities
+
+| #  | OWASP LLM Risk                             | Vulnerability in App           | Description |
+|----|---------------------------------------------|-------------------------------|-------------|
+| 1  | **LLM01 – Adversarial Attacks**             | Prompt Injection, Eval Abuse  | Input manipulation to generate harmful or biased responses |
+| 2  | **LLM02 – Output Integrity/Filtering**      | Not directly simulated        | Risk of generating harmful or offensive output |
+| 3  | **LLM03 – Training Data Poisoning**         | Data Poisoning                | Tampering with training data to bias models |
+| 4  | **LLM04 – Model Denial of Service**         | Not simulated (yet)           | Overloading API to exhaust resources |
+| 5  | **LLM05 – Supply Chain Vulnerabilities**    | Supply Chain, Serialization   | Risk from untrusted code, models, dependencies |
+| 6  | **LLM06 – Sensitive Info Disclosure**       | Info Leakage                  | Secrets or env vars exposed via debug endpoints |
+| 7  | **LLM07 – Insecure Plugin Design**          | Feature Store Pull            | Ingesting features from untrusted sources |
+| 8  | **LLM08 – Excessive Agency**                | (Not directly shown)          | AI systems acting autonomously without oversight |
+| 9  | **LLM09 – Overreliance on LLMs**            | (Not directly shown)          | LLMs being used for critical decisions without validation |
+| 10 | **LLM10 – Model Theft/IP Exposure**         | Model Stealing, Open API      | Recreating models via inference queries |
+
